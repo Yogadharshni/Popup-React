@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField";
 import Checkbox from "@mui/material/Checkbox";
+
 import "./App.css";
 
 const Popup = ({ handleClose, show }) => {
@@ -128,7 +129,8 @@ const Popup = ({ handleClose, show }) => {
           <div className="blue-box">
             {addedSchemas.map((schema, index) => (
               <div key={index} className="added-schema">
-                <Checkbox {...label} color="success" />
+                {/* <Checkbox {...label} color="success" /> */}
+                
                 <select
                   className="dropdownn"
                   value={schema}
